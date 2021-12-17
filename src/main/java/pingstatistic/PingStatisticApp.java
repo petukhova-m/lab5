@@ -78,7 +78,7 @@ public class PingStatisticApp {
 
 
                 })
-
+                .toMat(Sink.fold(0L, Long::sum), Keep.right());
 
 
 
