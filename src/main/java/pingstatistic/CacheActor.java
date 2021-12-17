@@ -18,7 +18,7 @@ public class CacheActor extends AbstractActor{
 
 
         data.put(request.getUrl(), request.getTime());
-    }
+
 
 
         String url = request.first();
