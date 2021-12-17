@@ -88,7 +88,7 @@ public class PingStatisticApp {
         final Http http = Http.get(system);
         materializer = ActorMaterializer.create(system);
         final Flow<HttpRequest, HttpResponse, NotUsed> routeFlow = Flow
-
+                .of(HttpRequest.class)
                 .map(PingStatisticApp::makePair)
                 .mapAsync(5, PingStatisticApp::asy)
 

@@ -11,7 +11,7 @@ public class CacheActor extends AbstractActor{
     @Override
 
         return ReceiveBuilder.create()
-                .match(Pair.class, this::findInCache)
+
                 .match(StoreRequest.class, this::storeToCache)
                 .build();
     }
