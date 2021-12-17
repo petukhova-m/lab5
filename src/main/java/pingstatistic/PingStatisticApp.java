@@ -85,7 +85,7 @@ public class PingStatisticApp {
         System.out.println("started!");
         ActorSystem system = ActorSystem.create("routes");
         cache = system.actorOf(Props.create(CacheActor.class));
-        final Http http = Http.get(system);
+
         materializer = ActorMaterializer.create(system);
         final Flow<HttpRequest, HttpResponse, NotUsed> routeFlow = Flow
                 .of(HttpRequest.class)
@@ -107,6 +107,6 @@ public class PingStatisticApp {
         binding
 
                 .thenAccept(unbound -> system.terminate()); // and shutdown when done
-
+    }
 
 }
