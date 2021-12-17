@@ -12,7 +12,7 @@ public class CacheActor extends AbstractActor{
     public Receive createReceive() {
 
 
-                .match(StoreRequest.class, this::storeToCache)
+
                 .build();
     }
 
