@@ -21,7 +21,7 @@ public class CacheActor extends AbstractActor{
     }
 
     private void findInCache(Pair<String, Integer> request) {
-        String url = request.first();
+
 
                 new CacheResponse(
                         url,
