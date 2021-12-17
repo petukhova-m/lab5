@@ -38,7 +38,7 @@ public class PingStatisticApp {
         String count = query.get("count").orElse("10");
 
     }
-
+    private static CompletionStage<Object> asy(Pair<String, Integer> pair) {
 
         return Patterns.ask(cache, pair, Duration.ofMillis(5000)).thenCompose(
                 result -> {
