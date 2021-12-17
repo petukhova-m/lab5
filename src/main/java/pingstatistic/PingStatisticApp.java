@@ -60,7 +60,7 @@ public class PingStatisticApp {
                                             )
                                 )
                             );
-
+                });
     }
     private static Sink<Pair<String, Integer>, CompletionStage<Long>> testSink() {
         return Flow
