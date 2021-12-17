@@ -36,7 +36,7 @@ public class PingStatisticApp {
         Query query = request.getUri().query();
         String url = query.get("testUrl").orElse(DEFAULT_URL);
         String count = query.get("count").orElse("10");
-        return new Pair<String, Integer>(url, Integer.parseInt(count));
+
     }
     private static CompletionStage<Object> asy(Pair<String, Integer> pair) {
 
