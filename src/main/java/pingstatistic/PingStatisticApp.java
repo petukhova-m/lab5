@@ -92,7 +92,7 @@ public class PingStatisticApp {
 
                 .mapAsync(5, PingStatisticApp::asy)
                 .map(result -> {
-
+                    Pair<String, Long> pair = (Pair<String, Long>) result;
 
 
 
