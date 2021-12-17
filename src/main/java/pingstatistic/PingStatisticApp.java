@@ -88,7 +88,7 @@ public class PingStatisticApp {
 
 
 
-
+                .of(HttpRequest.class)
 
 
 
