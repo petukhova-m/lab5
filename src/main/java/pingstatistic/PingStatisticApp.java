@@ -97,7 +97,7 @@ public class PingStatisticApp {
 
 
 
-
+        final CompletionStage<ServerBinding> binding = http.bindAndHandle(
 
 
                 materializer
