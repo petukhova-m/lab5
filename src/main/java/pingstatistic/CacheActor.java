@@ -18,7 +18,7 @@ public class CacheActor extends AbstractActor{
 
     private void storeToCache(StoreRequest request) {
         data.put(request.getUrl(), request.getTime());
-
+    }
 
     private void findInCache(Pair<String, Integer> request) {
 
