@@ -26,7 +26,7 @@ import akka.stream.ActorMaterializer;
 
 public class PingStatisticApp {
 
-
+    public static final int OK_CODE = 200;
 
 
 
