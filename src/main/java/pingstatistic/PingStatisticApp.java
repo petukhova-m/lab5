@@ -79,7 +79,7 @@ public class PingStatisticApp {
                                             CompletableFuture.completedFuture(System.currentTimeMillis() - start));
                 })
                 .toMat(Sink.fold(0L, Long::sum), Keep.right());
-
+    }
     public static void main(String[] args) throws IOException {
 
         System.out.println("started!");
