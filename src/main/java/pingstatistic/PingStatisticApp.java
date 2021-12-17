@@ -46,7 +46,7 @@ public class PingStatisticApp {
                     if (responceTime > 0) {
                         return CompletableFuture.completedFuture(new Pair<>(pair.first(), responceTime));
                     }
-
+                    return Source.from(Collections.singletonList(pair))
                             .toMat(
 
                                     Keep.right()
