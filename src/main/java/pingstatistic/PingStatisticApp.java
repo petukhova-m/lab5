@@ -43,7 +43,7 @@ public class PingStatisticApp {
         return Patterns.ask(cache, pair, Duration.ofMillis(5000)).thenCompose(
                 result -> {
                     long responceTime = ((CacheResponse) result).getTime();
-                    if (responceTime > 0) {
+
                         return CompletableFuture.completedFuture(new Pair<>(pair.first(), responceTime));
                     }
                     return Source.from(Collections.singletonList(pair))
