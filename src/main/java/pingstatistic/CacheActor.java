@@ -5,7 +5,7 @@ import akka.japi.pf.ReceiveBuilder;
 
 import java.util.Map;
 
-
+public class CacheActor extends AbstractActor{
 
 
     @Override
