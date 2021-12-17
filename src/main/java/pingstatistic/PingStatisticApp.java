@@ -27,7 +27,7 @@ import java.util.concurrent.Future;
 public class PingStatisticApp {
     public static final int SERVER_PORT = 8080;
     public static final int OK_CODE = 200;
-
+    public static ActorRef cache;
 
     public static final String DEFAULT_URL = "https://www.google.ru/";
 
