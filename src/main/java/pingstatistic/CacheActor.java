@@ -22,7 +22,7 @@ public class CacheActor extends AbstractActor{
 
     private void findInCache(Pair<String, Integer> request) {
 
-        sender().tell(
+
                 new CacheResponse(
                         url,
 
