@@ -33,7 +33,7 @@ public class PingStatisticApp {
 
 
 
-
+        Query query = request.getUri().query();
 
 
 
