@@ -11,7 +11,7 @@ public class StoreRequest {
 
     public String getUrl() {
         return url;
-
+    }
 
     public long getTime() {
         return time;
