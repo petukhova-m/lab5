@@ -10,11 +10,11 @@ public class CacheResponse {
 
     public Long getTime() {
         return time;
-
+    }
 
 
     public CacheResponse(String url, Long time) {
 
         this.time = time;
-
+    }
 
