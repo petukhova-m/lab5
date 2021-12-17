@@ -9,7 +9,7 @@ public class CacheActor extends AbstractActor{
 
 
     @Override
-    public Receive createReceive() {
+
 
 
                 .match(StoreRequest.class, this::storeToCache)
