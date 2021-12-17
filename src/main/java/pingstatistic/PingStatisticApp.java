@@ -33,7 +33,7 @@ public class PingStatisticApp {
 
     public static Pair<String, Integer> makePair(HttpRequest request) {
 
-        Query query = request.getUri().query();
+
         String url = query.get("testUrl").orElse(DEFAULT_URL);
         String count = query.get("count").orElse("10");
         return new Pair<String, Integer>(url, Integer.parseInt(count));
