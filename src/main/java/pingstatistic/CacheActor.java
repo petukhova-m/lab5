@@ -1,6 +1,6 @@
 package pingstatistic;
 
-
+import akka.japi.Pair;
 
 import java.util.HashMap;
 
