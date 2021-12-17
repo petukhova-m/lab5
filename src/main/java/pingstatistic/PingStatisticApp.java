@@ -42,7 +42,7 @@ public class PingStatisticApp {
 
 
                 result -> {
-
+                    long responceTime = ((CacheResponse) result).getTime();
 
 
                     }
