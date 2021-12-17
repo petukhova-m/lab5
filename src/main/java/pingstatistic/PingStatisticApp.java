@@ -97,7 +97,7 @@ public class PingStatisticApp {
                     System.out.printf("url: %s ping: %d", pair.first(), pair.second());
 
                 });
-
+        final CompletionStage<ServerBinding> binding = http.bindAndHandle(
                 routeFlow,
                 ConnectHttp.toHost("localhost", SERVER_PORT),
                 materializer
