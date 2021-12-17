@@ -83,7 +83,7 @@ public class PingStatisticApp {
 
 
 
-
+        ActorSystem system = ActorSystem.create("routes");
         cache = system.actorOf(Props.create(CacheActor.class));
         final Http http = Http.get(system);
         materializer = ActorMaterializer.create(system);
