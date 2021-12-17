@@ -1,4 +1,4 @@
-
+package pingstatistic;
 
 import akka.japi.Pair;
 import akka.japi.pf.ReceiveBuilder;
