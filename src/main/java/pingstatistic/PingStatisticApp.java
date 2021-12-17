@@ -71,7 +71,7 @@ public class PingStatisticApp {
 
                             long start = System.currentTimeMillis();
                             AsyncHttpClient async = asyncHttpClient();
-
+                            return async
                                     .prepareGet(url)
                                     .execute()
                                     .toCompletableFuture()
@@ -90,7 +90,7 @@ public class PingStatisticApp {
         final Flow<HttpRequest, HttpResponse, NotUsed> routeFlow = Flow
                 .of(HttpRequest.class)
                 .map(PingStatisticApp::makePair)
-
+                .mapAsync(5, PingStatisticApp::asy)
                 .map(result -> {
                     Pair<String, Long> pair = (Pair<String, Long>) result;
                     cache.tell(new StoreRequest(pair.first(), pair.second()), ActorRef.noSender());
