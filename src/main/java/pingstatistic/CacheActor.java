@@ -10,7 +10,7 @@ public class CacheActor extends AbstractActor{
 
     @Override
     public Receive createReceive() {
-        return ReceiveBuilder.create()
+
 
                 .match(StoreRequest.class, this::storeToCache)
                 .build();
@@ -25,7 +25,7 @@ public class CacheActor extends AbstractActor{
         sender().tell(
                 new CacheResponse(
                         url,
-
+                        data.containsKey(url) ? data.get(url) : -1L
                 ),
                 getSelf()
         );
