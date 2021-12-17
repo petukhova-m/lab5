@@ -6,11 +6,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CacheActor extends AbstractActor{
-    private final Map<String, Long> data = new HashMap<>();
+
 
     @Override
     public Receive createReceive() {
-        return ReceiveBuilder.create()
+
 
                 .match(StoreRequest.class, this::storeToCache)
                 .build();
