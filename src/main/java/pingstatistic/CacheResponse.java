@@ -1,4 +1,4 @@
-package pingstatistic;
+
 
 public class CacheResponse {
     private final String url;
