@@ -53,7 +53,7 @@ public class PingStatisticApp {
                             )
                             .run(materializer)
                             .thenCompose(sum ->
-
+                                CompletableFuture.completedFuture(
                                             new Pair<>(
                                                     pair.first(),
                                                     sum/pair.second()

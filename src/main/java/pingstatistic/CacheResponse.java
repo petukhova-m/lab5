@@ -8,7 +8,7 @@ package pingstatistic;
 
     }
 
-    public Long getTime() {
+
         return time;
     }
 
