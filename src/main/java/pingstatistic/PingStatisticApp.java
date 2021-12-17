@@ -101,7 +101,7 @@ public class PingStatisticApp {
                 routeFlow,
                 ConnectHttp.toHost("localhost", SERVER_PORT),
                 materializer
-        );
+
         System.out.println("Server online at http://localhost:8080/\nPress RETURN to stop...");
         System.in.read();
         binding
