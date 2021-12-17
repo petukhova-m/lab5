@@ -6,7 +6,7 @@ public class CacheResponse {
 
     public String getUrl() {
         return url;
-    }
+
 
     public Long getTime() {
         return time;
