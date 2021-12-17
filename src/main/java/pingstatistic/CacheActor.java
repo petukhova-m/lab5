@@ -1,6 +1,6 @@
 package pingstatistic;
 import akka.actor.AbstractActor;
-
+import akka.japi.Pair;
 import akka.japi.pf.ReceiveBuilder;
 import java.util.HashMap;
 import java.util.Map;
@@ -12,7 +12,7 @@ public class CacheActor extends AbstractActor{
     public Receive createReceive() {
         return ReceiveBuilder.create()
                 .match(Pair.class, this::findInCache)
-                .match(StoreRequest.class, this::storeToCache)
+
                 .build();
     }
 

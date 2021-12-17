@@ -74,7 +74,7 @@ public class PingStatisticApp {
                             return async
                                     .prepareGet(url)
                                     .execute()
-                                    .toCompletableFuture()
+
                                     .thenCompose(request ->
                                             CompletableFuture.completedFuture(System.currentTimeMillis() - start));
                 })
