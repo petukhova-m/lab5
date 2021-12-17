@@ -14,7 +14,7 @@ public class CacheResponse {
 
 
     public CacheResponse(String url, Long time) {
-
+        this.url = url;
         this.time = time;
     }
 
