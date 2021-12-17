@@ -71,7 +71,7 @@ public class PingStatisticApp {
 
                             long start = System.currentTimeMillis();
 
-
+                            return async
 
 
 
