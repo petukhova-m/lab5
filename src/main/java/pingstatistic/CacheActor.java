@@ -24,7 +24,7 @@ public class CacheActor extends AbstractActor{
         String url = request.first();
 
                 new CacheResponse(
-                        url,
+
                         data.containsKey(url) ? data.get(url) : -1L
                 ),
                 getSelf()
