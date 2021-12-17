@@ -1,4 +1,4 @@
-
+package pingstatistic;
 
 
 import akka.actor.*;
