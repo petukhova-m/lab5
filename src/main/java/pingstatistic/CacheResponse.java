@@ -10,7 +10,7 @@ package pingstatistic;
 
 
         return time;
-    }
+
 
 
     public CacheResponse(String url, Long time) {
