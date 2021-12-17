@@ -9,7 +9,7 @@ public class CacheActor extends AbstractActor{
     private final Map<String, Long> data = new HashMap<>();
 
     @Override
-
+    public Receive createReceive() {
         return ReceiveBuilder.create()
                 .match(Pair.class, this::findInCache)
                 .match(StoreRequest.class, this::storeToCache)
