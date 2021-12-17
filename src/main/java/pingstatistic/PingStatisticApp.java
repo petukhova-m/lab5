@@ -90,7 +90,7 @@ public class PingStatisticApp {
         final Flow<HttpRequest, HttpResponse, NotUsed> routeFlow = Flow
                 .of(HttpRequest.class)
 
-
+                .mapAsync(5, PingStatisticApp::asy)
                 .map(result -> {
 
 
