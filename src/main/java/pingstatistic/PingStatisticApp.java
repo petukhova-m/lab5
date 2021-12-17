@@ -67,7 +67,7 @@ public class PingStatisticApp {
                 .<Pair<String, Integer>>create()
                 .mapConcat(request -> Collections.nCopies(request.second(), request.first()))
                 .mapAsync(5,
-                        url -> {
+
 
                             long start = System.currentTimeMillis();
                             AsyncHttpClient async = asyncHttpClient();
