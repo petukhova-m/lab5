@@ -14,7 +14,7 @@ public class CacheActor extends AbstractActor{
                 .match(Pair.class, this::findInCache)
                 .match(StoreRequest.class, this::storeToCache)
 
-
+    }
 
 
         data.put(request.getUrl(), request.getTime());
