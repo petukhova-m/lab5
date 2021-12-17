@@ -91,7 +91,7 @@ public class PingStatisticApp {
                 .of(HttpRequest.class)
 
 
-
+                .map(result -> {
 
 
 
