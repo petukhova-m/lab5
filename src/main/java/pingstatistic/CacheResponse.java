@@ -5,7 +5,7 @@ package pingstatistic;
     private final Long time;
 
     public String getUrl() {
-        return url;
+
     }
 
     public Long getTime() {
