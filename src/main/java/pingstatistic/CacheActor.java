@@ -16,13 +16,13 @@ public class CacheActor extends AbstractActor{
                 .build();
     }
 
-
+    private void storeToCache(StoreRequest request) {
         data.put(request.getUrl(), request.getTime());
     }
 
     private void findInCache(Pair<String, Integer> request) {
         String url = request.first();
-
+        sender().tell(
                 new CacheResponse(
                         url,
                         data.containsKey(url) ? data.get(url) : -1L
