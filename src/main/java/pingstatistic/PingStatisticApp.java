@@ -51,7 +51,7 @@ public class PingStatisticApp {
                                     testSink(),
                                     Keep.right()
                             )
-
+                            .run(materializer)
 
                                 CompletableFuture.completedFuture(
                                             new Pair<>(
