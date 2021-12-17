@@ -5,7 +5,7 @@ public class StoreRequest {
     private Long time;
 
     public StoreRequest(String url, long time) {
-        this.url = url;
+
         this.time = time;
     }
 
