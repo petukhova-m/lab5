@@ -8,7 +8,7 @@ package pingstatistic;
 
     }
 
-
+    public Long getTime() {
         return time;
     }
 
@@ -17,4 +17,4 @@ package pingstatistic;
         this.url = url;
         this.time = time;
     }
-
+}
