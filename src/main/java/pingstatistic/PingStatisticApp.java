@@ -59,7 +59,7 @@ public class PingStatisticApp {
                                                     sum/pair.second()
 
 
-
+                            );
                 });
     }
     private static Sink<Pair<String, Integer>, CompletionStage<Long>> testSink() {
