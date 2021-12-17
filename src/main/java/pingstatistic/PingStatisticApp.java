@@ -75,7 +75,7 @@ public class PingStatisticApp {
                                     .prepareGet(url)
                                     .execute()
                                     .toCompletableFuture()
-
+                                    .thenCompose(request ->
                                             CompletableFuture.completedFuture(System.currentTimeMillis() - start));
                 })
                 .toMat(Sink.fold(0L, Long::sum), Keep.right());
