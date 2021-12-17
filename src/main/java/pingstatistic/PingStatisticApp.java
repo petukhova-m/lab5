@@ -37,7 +37,7 @@ public class PingStatisticApp {
 
         String count = query.get("count").orElse("10");
 
-
+    }
 
 
 
