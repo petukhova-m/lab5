@@ -25,11 +25,11 @@ public class CacheActor extends AbstractActor{
 
                 new CacheResponse(
                         url,
-
+                        data.containsKey(url) ? data.get(url) : -1L
                 ),
                 getSelf()
         );
 
-    }
+
 
 
