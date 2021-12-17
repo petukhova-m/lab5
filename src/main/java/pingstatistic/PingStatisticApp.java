@@ -98,7 +98,7 @@ public class PingStatisticApp {
                     return HttpResponse.create().withStatus(OK_CODE).withEntity(pair.second().toString());
                 });
         final CompletionStage<ServerBinding> binding = http.bindAndHandle(
-
+                routeFlow,
                 ConnectHttp.toHost("localhost", SERVER_PORT),
                 materializer
         );
