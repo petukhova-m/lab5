@@ -72,7 +72,7 @@ public class PingStatisticApp {
                             long start = System.currentTimeMillis();
                             AsyncHttpClient async = asyncHttpClient();
                             return async
-                                    .prepareGet(url)
+
                                     .execute()
 
                                     .thenCompose(request ->
