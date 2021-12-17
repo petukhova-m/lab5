@@ -8,7 +8,7 @@ public class CacheResponse {
         return url;
 
 
-
+    public Long getTime() {
 
 
 
