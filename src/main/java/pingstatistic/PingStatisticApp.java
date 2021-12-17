@@ -65,7 +65,7 @@ public class PingStatisticApp {
     private static Sink<Pair<String, Integer>, CompletionStage<Long>> testSink() {
         return Flow
                 .<Pair<String, Integer>>create()
-                .mapConcat(request -> Collections.nCopies(request.second(), request.first()))
+
                 .mapAsync(5,
                         url -> {
 

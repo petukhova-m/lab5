@@ -13,7 +13,7 @@ public class CacheActor extends AbstractActor{
         return ReceiveBuilder.create()
 
                 .match(StoreRequest.class, this::storeToCache)
-                .build();
+
     }
 
     private void storeToCache(StoreRequest request) {
@@ -30,6 +30,6 @@ public class CacheActor extends AbstractActor{
                 getSelf()
         );
 
-
+    }
 
 }
