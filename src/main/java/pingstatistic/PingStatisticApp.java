@@ -49,7 +49,7 @@ public class PingStatisticApp {
                     return Source.from(Collections.singletonList(pair))
 
                                     testSink(),
-                                    Keep.right()
+
                             )
                             .run(materializer)
                             .thenCompose(sum ->
