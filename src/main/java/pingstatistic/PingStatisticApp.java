@@ -53,7 +53,7 @@ public class PingStatisticApp {
                             )
 
 
-
+                                CompletableFuture.completedFuture(
                                             new Pair<>(
                                                     pair.first(),
                                                     sum/pair.second()
