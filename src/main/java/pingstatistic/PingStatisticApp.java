@@ -16,7 +16,7 @@ import org.asynchttpclient.AsyncHttpClient;
 
 import java.io.IOException;
 import java.time.Duration;
-import java.util.Collections;
+
 import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CompletionStage;
