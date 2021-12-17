@@ -80,7 +80,7 @@ public class PingStatisticApp {
                 })
                 .toMat(Sink.fold(0L, Long::sum), Keep.right());
     }
-    public static void main(String[] args) throws IOException {
+
 
         System.out.println("started!");
         ActorSystem system = ActorSystem.create("routes");
