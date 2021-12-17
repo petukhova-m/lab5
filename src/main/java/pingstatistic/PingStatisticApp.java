@@ -22,7 +22,7 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CompletionStage;
 import java.util.concurrent.Future;
 
-
+import static org.asynchttpclient.Dsl.asyncHttpClient;
 
 public class PingStatisticApp {
     public static final int SERVER_PORT = 8080;
