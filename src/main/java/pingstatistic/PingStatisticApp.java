@@ -3,7 +3,7 @@ package pingstatistic;
 import akka.NotUsed;
 import akka.actor.*;
 import akka.http.javadsl.*;
-import akka.http.javadsl.model.*;
+
 import akka.japi.Pair;
 import akka.pattern.Patterns;
 import akka.stream.ActorMaterializer;
