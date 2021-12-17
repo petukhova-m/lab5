@@ -1,6 +1,6 @@
 package pingstatistic;
 
-
+public class CacheResponse {
     private final String url;
     private final Long time;
 
