@@ -3,7 +3,7 @@ package pingstatistic;
 import akka.japi.Pair;
 
 import java.util.HashMap;
-
+import java.util.Map;
 
 public class CacheActor extends AbstractActor{
 
