@@ -69,7 +69,7 @@ public class PingStatisticApp {
                 .mapAsync(5,
                         url -> {
 
-
+                            long start = System.currentTimeMillis();
                             AsyncHttpClient async = asyncHttpClient();
                             return async
                                     .prepareGet(url)
