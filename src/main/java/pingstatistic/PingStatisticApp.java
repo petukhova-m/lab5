@@ -41,7 +41,7 @@ public class PingStatisticApp {
     private static CompletionStage<Object> asy(Pair<String, Integer> pair) {
 
 
-                result -> {
+
                     long responceTime = ((CacheResponse) result).getTime();
                     if (responceTime > 0) {
 
