@@ -82,7 +82,7 @@ public class PingStatisticApp {
     }
     public static void main(String[] args) throws IOException {
 
-
+        System.out.println("started!");
         ActorSystem system = ActorSystem.create("routes");
         cache = system.actorOf(Props.create(CacheActor.class));
         final Http http = Http.get(system);

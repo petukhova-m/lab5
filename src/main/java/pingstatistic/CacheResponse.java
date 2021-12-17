@@ -16,5 +16,5 @@ public class CacheResponse {
 
         this.url = url;
         this.time = time;
-
+    }
 }
