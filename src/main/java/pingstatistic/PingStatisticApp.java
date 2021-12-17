@@ -54,7 +54,7 @@ public class PingStatisticApp {
 
 
 
-
+                                            new Pair<>(
                                                     pair.first(),
                                                     sum/pair.second()
 
