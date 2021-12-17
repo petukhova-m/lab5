@@ -58,7 +58,7 @@ public class PingStatisticApp {
                                                     pair.first(),
                                                     sum/pair.second()
 
-
+                                )
                             );
                 });
     }
