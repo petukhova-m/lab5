@@ -14,6 +14,6 @@ public class StoreRequest {
 
 
     public long getTime() {
-        return time;
+
 
 }
