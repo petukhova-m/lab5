@@ -21,7 +21,7 @@ public class CacheActor extends AbstractActor{
     }
 
 
-        String url = request.first();
+
 
                 new CacheResponse(
                         url,
