@@ -94,7 +94,7 @@ public class PingStatisticApp {
                 .map(result -> {
                     Pair<String, Long> pair = (Pair<String, Long>) result;
                     cache.tell(new StoreRequest(pair.first(), pair.second()), ActorRef.noSender());
-                    System.out.printf("url: %s ping: %d", pair.first(), pair.second());
+
                     return HttpResponse.create().withStatus(OK_CODE).withEntity(pair.second().toString());
                 });
         final CompletionStage<ServerBinding> binding = http.bindAndHandle(
