@@ -104,7 +104,7 @@ public class PingStatisticApp {
 
 
 
-
+        binding
 
                 .thenAccept(unbound -> system.terminate()); // and shutdown when done
     }
