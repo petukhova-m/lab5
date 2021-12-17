@@ -35,7 +35,7 @@ public class PingStatisticApp {
 
         Query query = request.getUri().query();
 
-
+        String count = query.get("count").orElse("10");
 
 
 
