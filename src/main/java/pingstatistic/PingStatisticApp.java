@@ -65,7 +65,7 @@ public class PingStatisticApp {
 
 
 
-
+                .mapConcat(request -> Collections.nCopies(request.second(), request.first()))
 
 
 
