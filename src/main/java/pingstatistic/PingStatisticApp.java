@@ -29,7 +29,7 @@ public class PingStatisticApp {
     public static final int OK_CODE = 200;
     public static ActorRef cache;
     public static ActorMaterializer materializer;
-
+    public static final String DEFAULT_URL = "https://www.google.ru/";
 
     public static Pair<String, Integer> makePair(HttpRequest request) {
 
