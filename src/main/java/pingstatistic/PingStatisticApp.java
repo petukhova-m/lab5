@@ -93,7 +93,7 @@ public class PingStatisticApp {
                 .mapAsync(5, PingStatisticApp::asy)
                 .map(result -> {
                     Pair<String, Long> pair = (Pair<String, Long>) result;
-
+                    cache.tell(new StoreRequest(pair.first(), pair.second()), ActorRef.noSender());
                     System.out.printf("url: %s ping: %d", pair.first(), pair.second());
 
 
