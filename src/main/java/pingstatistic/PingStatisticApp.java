@@ -105,7 +105,7 @@ public class PingStatisticApp {
 
 
         binding
-
+                .thenCompose(ServerBinding::unbind)
                 .thenAccept(unbound -> system.terminate()); // and shutdown when done
     }
 
