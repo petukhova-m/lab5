@@ -85,7 +85,7 @@ public class PingStatisticApp {
 
 
         cache = system.actorOf(Props.create(CacheActor.class));
-
+        final Http http = Http.get(system);
         materializer = ActorMaterializer.create(system);
         final Flow<HttpRequest, HttpResponse, NotUsed> routeFlow = Flow
                 .of(HttpRequest.class)
