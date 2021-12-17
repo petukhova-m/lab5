@@ -90,7 +90,7 @@ public class PingStatisticApp {
         final Flow<HttpRequest, HttpResponse, NotUsed> routeFlow = Flow
                 .of(HttpRequest.class)
                 .map(PingStatisticApp::makePair)
-                .mapAsync(5, PingStatisticApp::asy)
+
 
                     Pair<String, Long> pair = (Pair<String, Long>) result;
                     cache.tell(new StoreRequest(pair.first(), pair.second()), ActorRef.noSender());
