@@ -17,4 +17,4 @@ package pingstatistic;
         this.url = url;
         this.time = time;
 
-}
+
