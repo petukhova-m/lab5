@@ -44,7 +44,7 @@ public class PingStatisticApp {
                 result -> {
                     long responceTime = ((CacheResponse) result).getTime();
                     if (responceTime > 0) {
-
+                        return CompletableFuture.completedFuture(new Pair<>(pair.first(), responceTime));
                     }
                     return Source.from(Collections.singletonList(pair))
                             .toMat(
