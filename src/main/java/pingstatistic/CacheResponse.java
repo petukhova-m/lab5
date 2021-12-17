@@ -1,7 +1,7 @@
 package pingstatistic;
 
 
-
+    private final String url;
 
 
     public String getUrl() {
