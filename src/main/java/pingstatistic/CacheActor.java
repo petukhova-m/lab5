@@ -11,7 +11,7 @@ public class CacheActor extends AbstractActor{
 
 
         return ReceiveBuilder.create()
-
+                .match(Pair.class, this::findInCache)
 
 
     }
