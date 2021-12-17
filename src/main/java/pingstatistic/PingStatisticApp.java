@@ -96,7 +96,7 @@ public class PingStatisticApp {
                     cache.tell(new StoreRequest(pair.first(), pair.second()), ActorRef.noSender());
                     System.out.printf("url: %s ping: %d", pair.first(), pair.second());
 
-
+                });
         final CompletionStage<ServerBinding> binding = http.bindAndHandle(
                 routeFlow,
 
