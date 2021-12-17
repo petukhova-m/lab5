@@ -1,4 +1,4 @@
-package pingstatistic;
+
 
 public class StoreRequest {
     private String url;
