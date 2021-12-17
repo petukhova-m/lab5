@@ -94,7 +94,7 @@ public class PingStatisticApp {
                 .map(result -> {
                     Pair<String, Long> pair = (Pair<String, Long>) result;
 
-
+                    System.out.printf("url: %s ping: %d", pair.first(), pair.second());
 
 
         final CompletionStage<ServerBinding> binding = http.bindAndHandle(
