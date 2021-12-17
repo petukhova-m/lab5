@@ -31,7 +31,7 @@ public class PingStatisticApp {
 
 
 
-
+    public static Pair<String, Integer> makePair(HttpRequest request) {
 
         Query query = request.getUri().query();
 
