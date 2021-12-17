@@ -84,7 +84,7 @@ public class PingStatisticApp {
 
 
 
-
+        cache = system.actorOf(Props.create(CacheActor.class));
 
 
 
