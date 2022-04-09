@@ -1,1 +1,1 @@
-# lab5
+# Distributed and parallel programs
